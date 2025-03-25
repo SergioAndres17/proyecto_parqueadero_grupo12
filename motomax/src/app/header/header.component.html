@@ -1,0 +1,38 @@
+<div class="header">
+  <img src="logo1.png" style="border-radius: 100%; width: 3em;">
+  <!-- start nav -->
+<nav id="motos">
+  <!-- start menu -->
+  <ul>
+    <li><a href="#">motos</a>
+    <ul>
+      <li><a href="#">automáticas</a></li>
+      <li><a href="#">semi-automáticas</a></li>
+      <li><a href="#">urbanas</a></li>
+      <li><a href="#">naked</a></li>
+      <li href="nav-item">
+        <a href="#" [routerLink]="['/motos/sport']">sport</a>
+      </ul></li>
+  </ul>
+  <!-- end menu -->
+  </nav>
+  <!-- end nav -->
+  <nav id="repuestos">
+    <!-- start menu -->
+    <ul>
+      <li><a href="#">registros</a>
+        <ul>
+          <li><a href="#" [routerLink]="['/registros-clientes']">clientes</a></li>
+          <li><a href="#" [routerLink]="['/registros-motos']">motos</a></li>
+          </ul>    
+      </li>
+    </ul>
+    <!-- end menu -->
+    </nav>
+    <!-- end nav -->
+
+
+    <button [routerLink]="['/cliente']">EGISTRAR CLIENTES</button>
+    
+</div>
+  

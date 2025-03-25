@@ -1,0 +1,38 @@
+<div class="card bg-light mb-3 my-5">
+    <div class="card-header"></div>
+    <div class="card-body">
+      <h5 class="card-title">Clientes registrados</h5>
+      <table class="table table-bordered table-striped">
+        <thead>
+            <th>Id Cliente </th>
+            <th>Nombres</th>
+            <th>Primer Apellido</th>
+            <th>Segundo Apellido </th>
+            <th>Telefono </th>
+            <th>Correo  </th>
+            <th>
+              Editar
+            </th>
+            <th>
+              Eliminar
+            </th>
+        </thead>
+        <tbody>
+        <tr *ngFor="let indice of cliente">
+          <td>{{indice.idCliente}}</td>
+                <td>{{indice.nombre}}</td>
+                <td>{{indice.primerApellido}}</td>
+                <td>{{indice.segundoApellido}}</td>
+                <td>{{indice.telefono}}</td>
+                <td>{{indice.email}}</td>
+                <td>
+                  <button type="button" name="editar" [routerLink]="['../cliente', indice.idCliente]" class="btn btn-primary">Editar</button> 
+                </td> 
+                <td>
+                  <button type="button" name="eliminar" (click)="delete(indice)" class="btn btn-danger">Eliminar</button>    
+                </td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </div> 

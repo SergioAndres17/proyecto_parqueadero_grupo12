@@ -1,0 +1,92 @@
+/* Establece un fondo general para la página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Hace que ocupe toda la altura de la pantalla */
+}
+
+/* Contenedor principal para el formulario de registro */
+.registro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilo de la caja de registro */
+.registro-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+    z-index: 1;
+}
+
+/* Estilo del título del formulario de registro */
+.registro-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilo de los campos de texto */
+.textbox {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Estilo de los campos de entrada */
+.textbox input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Estilo cuando el campo tiene foco */
+.textbox input:focus {
+    border-color: #4CAF50;
+}
+
+/* Estilo del botón de registro */
+.registro-box input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto de hover sobre el botón de registro */
+.registro-box input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilo del enlace para volver al inicio de sesión */
+.registro-box p {
+    font-size: 14px;
+    color: #333;
+}
+
+.registro-box a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.registro-box a:hover {
+    text-decoration: underline;
+}

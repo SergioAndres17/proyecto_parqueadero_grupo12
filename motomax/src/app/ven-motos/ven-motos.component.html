@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APARTADO DE COMPRA - MotoMax</title>
+    <link rel="stylesheet" href="ven-motos.component.css">
+</head>
+<body>
+    <!-- Contenedor principal para el formulario de registro -->
+    <div class="registro-container">
+        <!-- Caja de registro -->
+        <div class="registro-box">
+            <h2>COMPRA</h2>
+
+            <!-- Formulario de registro -->
+            <form action="#">
+                <div class="textbox">
+                    <!-- Campo para el nombre -->
+                    <label for="modelo">Modelo</label>
+                    <select [(ngModel)]="moto.modelo" name="modelo" required>
+                        <option value="CBR650R">CBR650R</option>
+                        <option value="CBR1000RRR">CBR1000RRR</option>
+                        <option value="GSX-R1000R">GSX-R1000R</option>
+                        <option value="M1000RR">M1000RR</option>
+                        <option value="R1">R1</option>
+                        <option value="R6">R6</option>
+                        <option value="RS660">RS660</option>
+                        <option value="RSV4">RSV4</option>
+                        <option value="ZX6R">ZX6R</option>
+                        <option value="ZX10R">ZX10R</option>
+                    </select>
+                </div>
+
+                <div class="textbox">
+                    <!-- Campo para el primer apellido -->
+                    <input type="text" placeholder="form-control" [(ngModel)]="moto.marca" name="marca" placeholder="marca" required>
+                    
+                </div>
+
+                <div class="textbox">
+                    <!-- Campo para el segundo apellido -->
+                    <input type="text" placeholder="form-control" [(ngModel)]="moto.precio" name="precio" placeholder="precio" required>
+                </div>
+
+                <div class="textbox">
+                    <!-- Campo para el teléfono -->
+                    <input type="text" placeholder="form-control" [(ngModel)]="moto.anio" name="año" placeholder="Año" required>
+                </div>
+
+                <div class="textbox">
+                    <!-- Campo para el correo electrónico -->
+                    <input type="text" placeholder="form-control" [(ngModel)]="moto.color" name="color" placeholder="color" required>
+                </div>
+
+                <!-- Botón de registro -->
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <button class="btn btn-primary" role="button" (click)='create()' *ngIf="!moto.idMoto else elseBlock">
+                            Registrar
+                        </button>
+                    <ng-template #elseBlock>
+                        <button class="btn btn-primary" role="button" (click)='update()'>Editar</button>
+                    </ng-template>
+            
+                
+                    </div>
+                </div>
+            </form>
+
+            <!-- Enlace para volver al inicio de sesión (si lo deseas) -->
+
+        </div>
+    </div>
+</body>
+</html>
+

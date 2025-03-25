@@ -1,0 +1,123 @@
+/* Estilo para toda la sección de motos */
+.motos-section {
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo claro para la sección */
+  }
+  
+  /* Título de la sección */
+  .section-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Contenedor de las tarjetas de motos */
+  .motos-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se acomoden en filas */
+    gap: 20px; /* Espacio entre tarjetas */
+    justify-content: center;
+  }
+  
+  /* Estilo de cada tarjeta individual */
+  .moto-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0; /* Borde gris claro */
+    border-radius: 8px; /* Esquinas redondeadas */
+    width: 300px; /* Ancho de cada tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Imagen de la moto */
+  .moto-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Asegura que la imagen llene el espacio disponible */
+  }
+  
+  /* Información de la moto */
+  .moto-info {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  /* Nombre de la moto */
+  .moto-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+  }
+  
+  /* Tipo de moto (por ejemplo, "SPORT") */
+  .moto-type {
+    color: #888; /* Texto en gris */
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  /* Contenedor del precio y detalles */
+  .moto-price {
+    margin: 10px 0;
+  }
+  
+  /* Estilo del precio */
+  .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Detalles del precio (ej. IVA Incluido) */
+  .price span {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  /* Texto con detalles adicionales del precio */
+  .price-detail,
+  .validity {
+    font-size: 12px;
+    color: #888;
+    margin: 3px 0;
+  }
+  
+  /* Contenedor de los botones */
+  .moto-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  /* Botón de cotizar */
+  .quote-button {
+    background-color: #003b4d; /* Color azul oscuro */
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .quote-button:hover {
+    background-color: #002a3b; /* Color más oscuro al pasar el cursor */
+  }
+  
+  /* Enlace de "Descubrir más" */
+  .discover-more {
+    font-size: 14px;
+    color: #333;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .discover-more:hover {
+    color: #0056b3; /* Color azul al pasar el cursor */
+  }
+  
