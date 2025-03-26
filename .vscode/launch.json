@@ -9,5 +9,6 @@
             "projectName": "proyectofinal",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        }
     ]
 }
