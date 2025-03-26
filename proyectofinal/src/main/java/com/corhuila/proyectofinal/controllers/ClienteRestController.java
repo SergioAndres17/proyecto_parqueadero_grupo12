@@ -12,38 +12,36 @@ import java.util.List;
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/api")
-
 public class ClienteRestController {
+
     @Autowired
     private IClienteService clienteService;
 
     @GetMapping("/cliente")
-    public List<Cliente> index(){
+    public List<Cliente> index() {
         return clienteService.findAll();
     }
 
     @GetMapping("/cliente/{idCliente}")
-    public Cliente show(@PathVariable Integer idCliente){
+    public Cliente show(@PathVariable Integer idCliente) {
         return clienteService.findById(idCliente);
     }
 
     @PostMapping("/cliente")
     @ResponseStatus(HttpStatus.CREATED)
-    public Cliente create(@RequestBody ClienteDto cliente){
-
+    public Cliente create(@RequestBody ClienteDto cliente) {
         return clienteService.save(cliente);
     }
 
     @PutMapping("/cliente/{idCliente}")
     @ResponseStatus(HttpStatus.CREATED)
-    public Cliente update(@RequestBody ClienteDto cliente, @PathVariable Integer idCliente){
+    public Cliente update(@RequestBody ClienteDto cliente, @PathVariable Integer idCliente) {
         return clienteService.update(cliente, idCliente);
     }
 
     @DeleteMapping("/cliente/{idCliente}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void delete(@PathVariable Integer idCliente){
+    public void delete(@PathVariable Integer idCliente) {
         clienteService.delete(idCliente);
     }
-
 }

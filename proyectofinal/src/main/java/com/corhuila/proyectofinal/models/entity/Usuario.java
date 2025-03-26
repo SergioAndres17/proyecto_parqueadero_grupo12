@@ -9,6 +9,7 @@ import java.util.Date;
 @Entity
 @Table(name = "usuario")
 public class Usuario {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_usuario")
@@ -35,6 +36,9 @@ public class Usuario {
     @Column(name = "email")
     private String email;
 
+    @Column(name = "password")
+    private String password;
+
     @Column(name = "created_at")
     private Date createdAt;
 
@@ -43,5 +47,4 @@ public class Usuario {
 
     @Column(name = "deleted_at")
     private Date deletedAt;
-
 }

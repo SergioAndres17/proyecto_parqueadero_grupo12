@@ -2,10 +2,9 @@ package com.corhuila.proyectofinal.models.service;
 
 import com.corhuila.proyectofinal.models.entity.Usuario;
 import org.springframework.transaction.annotation.Transactional;
-
 import java.util.List;
 
-public interface IUsuarioService  {
+public interface IUsuarioService {
 
     @Transactional(readOnly = true)
     List<Usuario> findAll();
@@ -18,4 +17,8 @@ public interface IUsuarioService  {
 
     @Transactional
     void delete(Integer idUsuario);
+
+    String encriptarPassword(String password);
+
+    String hashContrasenia(String password);
 }

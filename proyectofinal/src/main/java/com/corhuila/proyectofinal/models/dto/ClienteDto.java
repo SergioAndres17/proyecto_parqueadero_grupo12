@@ -1,8 +1,6 @@
 package com.corhuila.proyectofinal.models.dto;
 
-import jakarta.persistence.Column;
 import lombok.Data;
-
 import java.util.Date;
 
 @Data
@@ -15,6 +13,7 @@ public class ClienteDto {
     private String email;
     private Integer tipoDocumento;
     private String numeroDocumento;
+    private String password;
     private Date createdAt;
     private Date updatedAt;
     private Date deletedAt;

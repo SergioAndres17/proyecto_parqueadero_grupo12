@@ -2,7 +2,6 @@ package com.corhuila.proyectofinal.models.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
-
 import java.util.Date;
 
 @Data

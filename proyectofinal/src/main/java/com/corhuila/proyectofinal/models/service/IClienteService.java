@@ -5,14 +5,17 @@ import com.corhuila.proyectofinal.models.entity.Cliente;
 
 import java.util.List;
 
-public interface IClienteService  {
+public interface IClienteService {
+
     public List<Cliente> findAll();
 
     public Cliente findById(Integer idCliente);
 
-    public Cliente save (ClienteDto clienteDto);
+    public Cliente save(ClienteDto clienteDto);
 
-    public Cliente update (ClienteDto clienteDto, Integer idCliente);
+    public String hashPassword(String password);
 
-    public void delete (Integer idCliente);
+    public Cliente update(ClienteDto clienteDto, Integer idCliente);
+
+    public void delete(Integer idCliente);
 }
