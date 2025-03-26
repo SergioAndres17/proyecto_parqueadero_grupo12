@@ -1,0 +1,13 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ProyectofinalApplication<proyectofinal>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.corhuila.proyectofinal.ProyectofinalApplication",
+            "projectName": "proyectofinal",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+    ]
+}
