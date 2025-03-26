@@ -54,12 +54,7 @@ public class ClienteServiceImpl implements IClienteService {
         usuario.setEmail(cliente.getEmail());
         usuario.setTelefono(cliente.getTelefono());
 
-        // Encripta la contraseña antes de guardar el usuario
-        if (cliente.getPassword() != null && !cliente.getPassword().isEmpty()) {
-            usuario.setPassword(hashPassword(cliente.getPassword()));
-        } else {
-            throw new RuntimeException("La contraseña no puede estar vacía");
-        }
+
 
         Usuario usuarioCreado = usuarioDao.save(usuario);
         Cliente clienteAgregar = new Cliente();
@@ -99,7 +94,7 @@ public class ClienteServiceImpl implements IClienteService {
         usuario.setEmail(cliente.getEmail());
         usuario.setTelefono(cliente.getTelefono());
 
-        // Si la nueva contraseña no es nula ni vacía, la encripta antes de actualizarla
+
         if (cliente.getPassword() != null && !cliente.getPassword().isEmpty()) {
             usuario.setPassword(hashPassword(cliente.getPassword()));
         }

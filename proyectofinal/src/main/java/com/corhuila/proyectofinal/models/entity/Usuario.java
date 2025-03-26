@@ -2,7 +2,6 @@ package com.corhuila.proyectofinal.models.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
-
 import java.util.Date;
 
 @Data
@@ -15,7 +14,7 @@ public class Usuario {
     @Column(name = "id_usuario")
     private Integer idUsuario;
 
-    @Column(name = "nombre")
+    @Column(name = "nombre", nullable = false)
     private String nombre;
 
     @Column(name = "primer_apellido")
@@ -24,19 +23,19 @@ public class Usuario {
     @Column(name = "segundo_apellido")
     private String segundoApellido;
 
-    @Column(name = "tipo_documento")
-    private Integer tipoDocumento;
+    @Column(name = "tipo_documento", nullable = false)
+    private String tipoDocumento;
 
-    @Column(name = "numero_documento")
+    @Column(name = "numero_documento", unique = true, nullable = false)
     private String numeroDocumento;
 
     @Column(name = "telefono")
     private String telefono;
 
-    @Column(name = "email")
+    @Column(name = "email", unique = true, nullable = false)
     private String email;
 
-    @Column(name = "password")
+    @Column(name = "password", nullable = false)
     private String password;
 
     @Column(name = "created_at")

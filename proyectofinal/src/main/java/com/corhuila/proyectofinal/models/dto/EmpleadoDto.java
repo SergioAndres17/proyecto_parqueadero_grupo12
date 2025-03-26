@@ -4,7 +4,7 @@ import lombok.Data;
 import java.util.Date;
 
 @Data
-public class ClienteDto {
+public class EmpleadoDto {
     private String nombre;
     private String primerApellido;
     private String segundoApellido;

@@ -2,14 +2,15 @@ package com.corhuila.proyectofinal.models.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
-
 import java.util.Date;
 
 @Data
 @Entity
 @Table(name = "empleado")
 public class Empleado {
+
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_empleado")
     private Integer idEmpleado;
 
@@ -23,6 +24,6 @@ public class Empleado {
     private Date deletedAt;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "id_usuario")
-    private Cliente usuario;
+    @JoinColumn(name = "id_usuario", nullable = false)
+    private Usuario usuario;
 }

@@ -11,7 +11,6 @@ C:\Users\Usere\Documents\GitHub\proyecto_parqueadero_grupo12\proyectofinal\src\m
 C:\Users\Usere\Documents\GitHub\proyecto_parqueadero_grupo12\proyectofinal\src\main\java\com\corhuila\proyectofinal\models\service\impl\EmpleadoServiceImpl.java
 C:\Users\Usere\Documents\GitHub\proyecto_parqueadero_grupo12\proyectofinal\src\main\java\com\corhuila\proyectofinal\models\service\impl\UsuarioServiceImpl.java
 C:\Users\Usere\Documents\GitHub\proyecto_parqueadero_grupo12\proyectofinal\src\main\java\com\corhuila\proyectofinal\ProyectofinalApplication.java
-C:\Users\Usere\Documents\GitHub\proyecto_parqueadero_grupo12\proyectofinal\src\main\java\com\corhuila\proyectofinal\config\Securityconfig.java
 C:\Users\Usere\Documents\GitHub\proyecto_parqueadero_grupo12\proyectofinal\src\main\java\com\corhuila\proyectofinal\models\entity\EspacioEstacionamiento.java
 C:\Users\Usere\Documents\GitHub\proyecto_parqueadero_grupo12\proyectofinal\src\main\java\com\corhuila\proyectofinal\models\service\IClienteService.java
 C:\Users\Usere\Documents\GitHub\proyecto_parqueadero_grupo12\proyectofinal\src\main\java\com\corhuila\proyectofinal\models\service\IEmpleadoService.java
@@ -20,3 +19,4 @@ C:\Users\Usere\Documents\GitHub\proyecto_parqueadero_grupo12\proyectofinal\src\m
 C:\Users\Usere\Documents\GitHub\proyecto_parqueadero_grupo12\proyectofinal\src\main\java\com\corhuila\proyectofinal\models\entity\Cliente.java
 C:\Users\Usere\Documents\GitHub\proyecto_parqueadero_grupo12\proyectofinal\src\main\java\com\corhuila\proyectofinal\models\entity\Empleado.java
 C:\Users\Usere\Documents\GitHub\proyecto_parqueadero_grupo12\proyectofinal\src\main\java\com\corhuila\proyectofinal\models\dao\IClienteDao.java
+C:\Users\Usere\Documents\GitHub\proyecto_parqueadero_grupo12\proyectofinal\src\main\java\com\corhuila\proyectofinal\models\dto\EmpleadoDto.java

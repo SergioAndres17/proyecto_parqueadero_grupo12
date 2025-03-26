@@ -1,3 +1,4 @@
+com\corhuila\proyectofinal\models\dto\EmpleadoDto.class
 com\corhuila\proyectofinal\controllers\EmpleadoRestController.class
 com\corhuila\proyectofinal\models\dao\IEmpleadoDao.class
 com\corhuila\proyectofinal\models\entity\Vehiculo.class
@@ -5,6 +6,5 @@ com\corhuila\proyectofinal\models\entity\Ticket.class
 com\corhuila\proyectofinal\models\entity\EspacioEstacionamiento.class
 com\corhuila\proyectofinal\models\entity\Pago.class
 com\corhuila\proyectofinal\models\service\IEmpleadoService.class
-com\corhuila\proyectofinal\config\Securityconfig.class
 com\corhuila\proyectofinal\models\entity\Empleado.class
 com\corhuila\proyectofinal\models\service\impl\EmpleadoServiceImpl.class
